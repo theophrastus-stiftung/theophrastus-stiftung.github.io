@@ -1,0 +1,2 @@
+<img src="/images/{{include.src}}" alt="{{include.description}}" title="{{include.description}}" class="{% if include.align == 'left'%}left{% endif %}{% if include.align == 'center'%}center{% endif %}{% if include.align == 'right'%}right{% endif %}" width="{{include.width}}" height="{{include.height}}" />
+{% if include.breakafter == 'true' %}<br style="clear:both"/>{% endif %}

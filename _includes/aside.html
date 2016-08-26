@@ -1,0 +1,31 @@
+<aside>
+  {% if page.pdfs.size > 0 %}
+    <h3>Downloads</h3>
+    <ul>
+    {% for pdfElem in page.pdfs %}
+      {% capture pdfFile %}{{ pdfElem | split: "=" | first }}{% endcapture %}
+      {%if pdfElem contains "=" %}{% capture pdfDesc %}{{ pdfElem | split: "=" | last }}{% endcapture %}{% endif %}
+      <li>
+        <a href="{{ site.baseurl }}/downloads/{{pdfFile}}" alt="{{pdfFile}}" target="_blank">
+          <figure>
+            <img src="{{ site.baseurl }}/images/pdf-icon.gif" />
+            {% if pdfDesc %}<figcaption>{{pdfDesc}}</figcaption>{% endif %}
+          </figure>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.images.size > 0 %}
+    <ul>
+    {% for imageElem in page.images %}
+    {% capture imageFile %}{{ imageElem | split: "=" | first }}{% endcapture %}
+    {%if imageElem contains "=" %}{% capture imageDesc %}{{ imageElem | split: "=" | last }}{% endcapture %}{% endif %}
+      <li>
+        <img src="{{ site.baseurl }}/images/{{imageFile}}" alt="{{imageFile}}" alt="{{imageDesc}}">
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+</aside>
