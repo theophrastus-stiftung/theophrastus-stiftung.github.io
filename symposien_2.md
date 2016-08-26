@@ -9,4 +9,5 @@ pdfs:
 
 # Mystik und Natur, 16.11. - 18.11.2007 Salzburg
 
-TODO BILDERGALERIE
+{% include image.html src="mystik-und-natur-1.jpg" align="center" width="600" breakafter="true" %}
+{% include image.html src="mystik-und-natur-2.jpg" align="center" width="600" breakafter="true" %}
