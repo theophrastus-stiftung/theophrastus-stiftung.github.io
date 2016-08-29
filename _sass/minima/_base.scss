@@ -62,6 +62,20 @@ img.center {
 }
 
 /**
+ * Image set plugin
+ */
+.image-set {
+  width: 100%;
+}
+.image-item {
+  float: left;
+  width: 25%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
  * Figures
  */
 figure > img {

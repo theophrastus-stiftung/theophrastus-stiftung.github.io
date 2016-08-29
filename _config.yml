@@ -19,8 +19,8 @@ description: > # this means to ignore newlines until "baseurl:"
    Theophrastus-Stiftung - Dornwegshöhstr. 6 - 64367 Mühltal - Tel.: (+49) 0 6151 - 91 31 00 - Fax: (+49) 0 6151/14 86 89 - info@theophrastus-stiftung.de
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.theophrastus-stiftung.de" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  theophrastus-stiftung
+#gems: [jekyll-image-set]
 
 # Build settings
 markdown: kramdown

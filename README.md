@@ -56,6 +56,11 @@ https://jekyllrb.com/ based static generated site
     normal setup:
     {% include image.html src="image.jpg" align="left" width="100" %}
 
+#### Image Folder
+
+    all images within a folder can be outputed via:
+    {% image_set images/myFolder %}
+
 ### additional content
 
 #### PDFs

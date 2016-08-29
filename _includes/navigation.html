@@ -3,13 +3,18 @@
     <li class="{% if page.url == "/" %}active{% endif %}">
       <a href="{{ site.baseurl }}/">{{ site.title }}</a>
     </li>
+    <li class="{% if page.url == "/impressum/" %}active{% endif %}">
+    <a href="{{ site.baseurl }}/impressum/">Impressum</a>
+    </li>
     {% assign entries = site.pages | sort: "url" %}
     {% for entry in entries %}
     {% if entry.url != '/' %}
-      {% if entry.title %}
-        <li class="{% if page.url contains entry.url %}active{% endif %}{% if entry.subpage %} sub{% endif %}{% if entry.subsubpage %} subsub{% endif %}">
-          <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-        </li>
+      {% if entry.url != '/impressum/' %}
+        {% if entry.title %}
+          <li class="{% if page.url contains entry.url %}active{% endif %}{% if entry.subpage %} sub{% endif %}{% if entry.subsubpage %} subsub{% endif %}">
+            <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+          </li>
+        {% endif %}
       {% endif %}
     {% endif %}
     {% endfor %}
