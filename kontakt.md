@@ -9,6 +9,7 @@ permalink: /kontakt/
 {% include image.html src="charlotte.jpg" align="left" width="100" %}
 Vorstand der Theophrastus-Stiftung<br />
 Frau Charlotte Bender<br />
+Dornwegshöhstr. 6  64367 Mühltal<br />
 Telefon (+49) 0 6151 - 91 856 - 0<br />
 Telefax (+49) (0)6151 - 91 856-66<br />
 Homepage: {% include link.html link="www.theophrastus-stiftung.de" linktext="www.theophrastus-stiftung.de" %}<br />
